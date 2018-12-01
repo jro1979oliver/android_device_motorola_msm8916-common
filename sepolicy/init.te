@@ -2,3 +2,5 @@ allow init firmware_file:dir mounton;
 allow init fsg_file:dir mounton;
 allow init pstorefs:dir mounton;
 allow init sysfs_graphics:file { setattr w_file_perms };
+
+allow init proc_cpu_alignment:file w_file_perms;
