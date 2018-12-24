@@ -120,12 +120,12 @@ void Light::setSpeakerBatteryLightLocked() {
 }
 
 void Light::setSpeakerLightLocked(const LightState& state) {
-    if (isLit(state)) {
-        mChargingLed << DEFAULT_MAX_BRIGHTNESS << std::endl;
-    } else {
+//    if (isLit(state)) {
+//        mChargingLed << DEFAULT_MAX_BRIGHTNESS << std::endl;
+//    } else {
         // Lights off
         mChargingLed << 0 << std::endl;
-    }
+//    }
 }
 
 }  // namespace implementation
