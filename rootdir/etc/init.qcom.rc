@@ -335,10 +335,10 @@ service qcamerasvr /vendor/bin/mm-qcamera-daemon
     group camera system inet input graphics
     writepid /dev/cpuset/camera-daemon/tasks
 
-service charger /charger
+service charger /system/bin/charger
     class charger
-    group log
-    seclabel u:r:healthd:s0
+    group system graphics
+    seclabel u:r:charger:s0
     writepid /dev/cpuset/system-background/tasks
 
 service loc_launcher /vendor/bin/loc_launcher
