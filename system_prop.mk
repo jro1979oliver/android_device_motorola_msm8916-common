@@ -58,6 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.ccodec=0 \
     vendor.mediacodec.binder.size=6 \
     vidc.enc.narrow.searchrange=1
 
