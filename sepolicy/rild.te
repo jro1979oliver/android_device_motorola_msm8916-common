@@ -12,3 +12,4 @@ allow rild fsg_file:lnk_file read;
 allow rild persist_file:dir search;
 allow rild proc:file read;
 dontaudit rild vendor_file:file ioctl;
+allow rild proc:file open;

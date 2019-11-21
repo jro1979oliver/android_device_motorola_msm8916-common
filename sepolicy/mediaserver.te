@@ -4,7 +4,10 @@ allow mediaserver hal_configstore_ISurfaceFlingerConfigs:hwservice_manager { fin
 allow mediaserver sysfs_batteryinfo:dir r_dir_perms;
 allow mediaserver sysfs_batteryinfo:file r_file_perms;
 allow mediaserver camera_bgproc_service:service_manager { add };
-
+allow mediaserver serialno_prop:file open;
+allow mediaserver sysfs_battery_supply:file read;
 allow mediaserver device:dir r_dir_perms;
 allow mediaserver serialno_prop:file read;
 allow mediaserver sysfs_battery_supply:dir search;
+allow mediaserver serialno_prop:file getattr;
+allow mediaserver sysfs_battery_supply:file open;
