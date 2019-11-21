@@ -252,6 +252,10 @@ on post-fs
 on post-fs-data
     mkdir /data/misc/camera 0770 camera camera
 
+# Processgroup
+    chown system system /acct/uid_*
+    chmod 0777 /acct/uid_*
+
     # Create the directories used by the Wireless subsystem
     mkdir /data/vendor/wifi 0770 wifi wifi
     mkdir /data/vendor/wifi/sockets 0770 wifi wifi
