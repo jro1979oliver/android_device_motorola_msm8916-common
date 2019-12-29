@@ -3,3 +3,4 @@ allow priv_app proc_interrupts:file { open read getattr };
 allow priv_app proc_modules:file { open read getattr };
 allow priv_app sysfs:file read;
 allow priv_app system_app_data_file:dir getattr;
+allow priv_app sysfs:file open;
