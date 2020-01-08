@@ -16,6 +16,3 @@ allow mediaserver fwk_camera_hwservice:hwservice_manager add;
 allow mediaserver hal_camera_hwservice:hwservice_manager find;
 allow mediaserver hidl_base_hwservice:hwservice_manager add;
 allow mediaserver sensor_privacy_service:service_manager find;
-
-# Use HALs
-hal_client_domain(mediaserver, hal_lineage_camera_motor)
